@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+    --mainn: url(img/back-p.png);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'MuseoModerno', cursive;
+
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    /* background-image: linear-gradient(123deg, #60f5f5 , #c5a2b8 ,#7796be  , #bbfdfd); */
+    background-color:  #06314f;
+    background-image: var(--mainn);
+    background-size:cover ;
+  }
+
+
+  header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 5px 15px;
+}
+
+header .logo{
+    position: relative;
+    margin-top:20px ;
+    width: 200px;
+    height: 100px; 
+  }
+
+
+.hed a {
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.nav_linkes{
+    list-style: none;
+}
+.nav_linkes li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_linkes li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_linkes li a:hover {
+    color: #435b9e;
+}
+
+
+.container{
+    width: 70%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    margin: 10rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.container  .title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500; 
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 60%;
+    background: linear-gradient(123deg, #60f5f5 , #06314f , #bbfdfd);
+}
+.container form .user_details{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px; 
+    justify-content: space-between;
+}
+form .user_details .input_pox{
+    margin-bottom: 5px;
+    margin: 10px 0 6px 0;
+    width: calc( 100% / 1 - 20px);
+
+}
+.user_details .input_pox .datails{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+.user_details .input_pox input{
+    height: 45px;
+    width: 100%;
+    outline-color: #9b59b6;
+    border-radius:15px;
+    border: 2px solid #435b9e;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    
+
+}
+.user_details .input_pox input:focus,
+.user_details .input_pox input:valid{
+border-color: #9b59b6;
+}
+
+
+
+
+
+
+
+
+label {
+    margin-bottom: 10px;    margin-right: 50px;
+
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1.5px solid #2f407d;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #150202;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='%23333'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 8px);
+    background-position-y: center;
+    margin: 15px;
+    padding-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+form .button{
+    height: 45px;
+    margin: 15px 0px;
+    transition: all 0.2s ease;
+
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-image: linear-gradient(123deg  , #06314f , #435b9e);
+
+}
+
+/* ----------------------------- */
+
+/* @media (max-width: 584px){
+    .container{
+        max-width: 90%;
+    }
+    form .user_details .input_pox{
+        margin-bottom: 10px;
+        width:100%;
+    }
+    form .gender_details .category{
+        width: 100%;
+    }
+    .container form .user_details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .user_details::-webkit-scrollber{
+     width: 0;
+    }
+}
+
+
+
+ */
